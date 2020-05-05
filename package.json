@@ -7,8 +7,10 @@
     "start": "cd server && node proxy.js",
     "proxy": "cd server && nodemon proxy.js",
     "server": "cd server && nodemon server.js",
-    "dev": "concurrently \"npm run proxy\" \"npm run server\""
+    "dev": "concurrently \"npm run proxy\" \"npm run server\"",
+    "build": "cd server && node proxy.js"
   },
+  "heroku-run-build-script": true,
   "devDependencies": {
     "nodemon": "2.0.3"
   },
